@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;700&display=swap');
+
+html {
+  --color-primary: hsl(220, 70%, 60%);
+  --color-gray-dim: hsla(220, 15%, 40%, 0.04);
+  --color-black: hsl(220, 25%, 20%);
+  --color-gray: hsl(220, 15%, 40%);
+
+  --font-family-mono: 'Roboto Mono', Menlo, Consolas, 'Roboto Mono',
+  'Droid Sans Mono', 'Liberation Mono', Courier, monospace;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 body {
+  padding: 0 2rem;
+  height: 100%;
   margin: 0;
+  overflow-x: hidden;
+
+  background-color: var(--color-gray-dim);
+  color: var(--color-gray);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -8,6 +29,48 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  padding: 0 4px;
+  font-family: var(--font-family-mono);
+  background-color: #fff;
+  border: 1px solid hsla(0, 0%, 0%, 0.05);
+  border-radius: 2px;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p:first-of-type {
+  margin-top: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.header,
+.footer {
+  padding: 2rem;
+}
+
+.footer {
+  font-size: 90%;
+}
+
+.footer a {
+  color: var(--color-black);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
