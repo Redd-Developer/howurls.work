@@ -92,7 +92,7 @@ function App() {
               https://
             </Chunk>
             <Chunk
-              url="hostname"
+              url="domain"
               orientation="top"
               color="#307ab8"
               explanation={() => (
