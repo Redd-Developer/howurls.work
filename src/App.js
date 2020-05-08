@@ -203,10 +203,9 @@ function App() {
                     it's called an <em>anchor</em>, or <em>hash</em>.
                   </p>
                   <p>
-                    In modern development a fragment (or <em>hash</em>) can also
-                    be used to represent a page's state. One of such examples is
-                    a client-side routing, which you can observe on this
-                    website.
+                    In modern development a fragment can also be used to
+                    represent a page's state. One of such examples is a
+                    client-side routing, which you can observe on this website.
                   </p>
                 </div>
               )}
