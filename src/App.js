@@ -189,7 +189,7 @@ function App() {
                     <p>
                       Server decides how to handle a request on a given path.
                       For example, it may return an HTML page, or communicate
-                      with another servers and respond with a plain data.
+                      with another server and respond with a raw data.
                     </p>
                   </div>
                 )}
