@@ -166,14 +166,14 @@ function App() {
                           <code>:80</code> is used by HTTP
                         </li>
                         <li>
-                          <code>:433</code> is used by HTTPS
+                          <code>:443</code> is used by HTTPS
                         </li>
                       </ul>
                     </p>
                   </div>
                 )}
               >
-                :433
+                :443
               </Chunk>
               <Chunk
                 url="path"
