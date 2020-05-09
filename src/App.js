@@ -146,7 +146,7 @@ function App() {
               </Chunk>
               <Chunk
                 url="port"
-                color="red"
+                color="#7f4ae4"
                 explanation={() => (
                   <div>
                     <Heading>Port</Heading>
