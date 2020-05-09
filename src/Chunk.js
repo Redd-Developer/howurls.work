@@ -11,31 +11,43 @@ const Container = styled.span`
 `
 
 const Popover = styled.div`
-  --offset: 8rem;
+  --offset: 6rem;
 
   position: absolute;
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-family-regular);
   font-size: 1rem;
-  animation: slideUp 0.5s ease;
-  width: 90%;
+  width: 85%;
   white-space: normal;
 
-  ${({ orientation }) => {
-    switch (orientation) {
-      case 'top':
-        return css`
-          bottom: var(--offset);
-        `
-      default:
-        return css`
-          top: var(--offset);
-        `
-    }
-  }}
+  opacity: 0;
+  top: var(--offset);
+  transform: translateY(20px);
+  animation: slideUp 0.5s ease forwards;
 
   @media (min-width: 768px) {
+    width: 550px;
+  }
+
+  @media (min-width: 768px) and (min-height: 1000px) {
     --offset: 5rem;
-    width: 400px;
+
+    top: initial;
+    width: 370px;
+
+    ${({ orientation }) => {
+      switch (orientation) {
+        case 'top':
+          return css`
+            bottom: var(--offset);
+            transform: translateY(-20px);
+          `
+        default:
+          return css`
+            top: var(--offset);
+            transform: translateY(20px);
+          `
+      }
+    }}
 
     ${({ align }) => {
       switch (align) {
@@ -52,10 +64,6 @@ const Popover = styled.div`
   }
 
   @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(-24px);
-    }
     100% {
       opacity: 1;
       transform: translateY(0);
