@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { useLocation, useHistory } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 
 const Container = styled.span`
@@ -88,9 +88,14 @@ export const Chunk = ({
     return location.pathname.includes(url)
   }, [location.pathname, url])
 
+  const history = useHistory();
+  const redirect = function(){
+    history.replace(url)
+  }
+
   return (
     <Container color={color}>
-      <NavLink to={url}>{children}</NavLink>
+      <div className = 'NavLink' onClick={redirect}>{children}</div>
       {isActive && explanation && (
         <Popover orientation={orientation} align={align}>
           {explanation()}
