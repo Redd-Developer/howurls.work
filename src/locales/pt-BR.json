@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "Selecione uma parte da URL para saber mais",
+  "footer.copyright": "Feito com amor por {author}",
+  "url.http.protocol.name": "Protocolo",
+  "url.http.protocol.definition": "O protocolo define o conteúdo e forma de comunicação entre o navegador e o servidor.",
+  "url.http.protocol.description": "<p>Os protocolos mais comuns na web são <strong>HTTPS</strong> e <strong>HTTP</strong>, que foram projetados para lidar com arquivos de hypertext (HTML). Entretanto, há vários outros protocolos, como o FTP (File Transfer Protocol) para transferência de arquivos ou POP (Post Office Protocol) para enviar e receber emails.</p>",
+  "url.http.domain.name": "Nome do domínio",
+  "url.http.domain.definition": "O nome do domínio é o endereço legível do servidor.",
+  "url.http.domain.description": "<p>Na verdade, todos os servidores tem um endereço IP (i.e, <code>111.22.33.44</code>), porém são difíceis de lembrar e podem mudar, ao invés disso, utilizamos frequentemente domínios, como um alias.</p><p>Quando há requisição, o domínio é enviado ao DNS (Domain Name Servers) que procura o endereço IP atual do servidor.</p>",
+  "url.http.port.name": "Porta",
+  "url.http.port.definition": "O número da porta é utilizado pelo servidor para expor serviços específicos.",
+  "url.http.port.description": "<p>Um servidor lida com diversas coisas, como servir um página web ou transferência de arquivos, cada um desses serviços irá estar disponível em diferentes portas.</p><p>Porém, você dificilmente verá o número na porta, ela é sempre necessária, e por padrão é definida pelo <ProtocolLink>protocolo</ProtocolLink>:</p><ul><li><code>:80</code> é utilizada com HTTP</li><li><code>:443</code> é utilizada com HTTPS</li></ul>",
+  "url.http.path.name": "Caminho",
+  "url.http.path.definition": "O caminho é uma palavra que indica algum local no servidor.",
+  "url.http.path.description": "<p>O servidor ou o cliente decidem o que fazer dependendo do caminho. Por exemplo, pode retornar uma página HTML ou se comunicar com outro servidor e retornar outro dado.</p>",
+  "url.http.query.name": "Parâmetro query",
+  "url.http.query.definition": "Parâmetros de query são argumentos para o caminho.",
+  "url.http.query.description": "<p>Eles são armazenados em formato de <code>key=value</code> que conecta-se com o caminho com a <code>?</code> (interrogação). Argumentos adicionais são indicados com <code>&</code> (e comercial):</p><ul><li><code>?userId=123&type=reader</code></li></ul><p>O servidor pode acessar e analisar a query para obter mais informações sobre a requisição.</p>",
+  "url.http.fragment.name": "Fragmentos",
+  "url.http.fragment.definition": "O fragmento é uma referência para uma parte da página. Ela é chamada também de <em>anchor</em>, ou <em>hash</em>.",
+  "url.http.fragment.description": "<p>Hoje em dia, um fragmento pode também ser utilizado para representar um estado de uma página. Um exemplo é o client-side routing, que você pode ver neste site.</p>"
+}
