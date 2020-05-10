@@ -95,7 +95,7 @@ export const Chunk = ({
 
   return (
     <Container color={color}>
-      <div className = 'NavLink' onClick={redirect}>{children}</div>
+      <div className = {`NavLink ${isActive ? 'active' : ''}`} onClick={redirect}>{children}</div>
       {isActive && explanation && (
         <Popover orientation={orientation} align={align}>
           {explanation()}
