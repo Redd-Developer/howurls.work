@@ -2,11 +2,11 @@ import React from 'react'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Chunk } from './Chunk'
-import { Heading } from './Heading'
-import { Grid } from './Grid'
-import { Header } from './Header'
-import { Footer } from './Footer'
+import { Chunk } from './components/Chunk'
+import { Heading } from './components/Heading'
+import { Grid } from './components/Grid'
+import { Header } from './components/Header'
+import { Footer } from './components/Footer'
 
 const UrlBox = styled.div`
   display: inline-block;

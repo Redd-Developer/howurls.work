@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ReactComponent as GitHubLogo } from './images/github-logo.svg'
+import { ReactComponent as GitHubLogo } from '../images/github-logo.svg'
 import { Grid } from './Grid'
 
 const Container = styled.footer`
