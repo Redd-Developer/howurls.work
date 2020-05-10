@@ -1,5 +1,5 @@
 {
-  "homepage.urlPreview.placeholder": "Натисніть на часину URL, щоб дізнатись більше",
+  "homepage.urlPreview.placeholder": "Натисніть на частину URL, щоб дізнатись більше",
   "footer.copyright": "Зроблено з любов'ю від {author}",
   "url.http.protocol.name": "Протокол",
   "url.http.protocol.definition": "Протокол описує вміст та характер комунікації між браузером і сервером.",
