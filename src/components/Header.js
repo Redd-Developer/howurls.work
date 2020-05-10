@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { ReactComponent as Logo } from './images/logo-small.svg'
+import { ReactComponent as Logo } from '../images/logo-small.svg'
 import { Grid } from './Grid'
 
 const Alignment = styled.div`
