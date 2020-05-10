@@ -130,7 +130,7 @@ function App() {
                     <p>Domain is a human-readable address of the server.</p>
                     <p>
                       In reality, all servers have IP addresses (i.e.{' '}
-                      <code>111.22.333.44</code>), but since those are hard to
+                      <code>111.22.33.44</code>), but since those are hard to
                       remember and subjected to change, we often use domain
                       names like aliases instead.
                     </p>
