@@ -86,7 +86,7 @@ export const Chunk = ({
   const location = useLocation()
   const isActive = useMemo(() => {
     return location.pathname.includes(url)
-  }, [location.pathname])
+  }, [location.pathname, url])
 
   return (
     <Container color={color}>
