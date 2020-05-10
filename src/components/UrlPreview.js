@@ -1,8 +1,25 @@
 import React from 'react'
+import { FormattedMessage } from 'react-intl'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Heading } from './Heading'
 import { Chunk } from './Chunk'
+
+const createStandardComponent = (Name) => {
+  return (...chunks) => <Name>{chunks}</Name>
+}
+
+const formattedMessageValues = {
+  p: createStandardComponent('p'),
+  em: createStandardComponent('em'),
+  ul: createStandardComponent('ul'),
+  li: createStandardComponent('li'),
+  strong: createStandardComponent('strong'),
+  code: createStandardComponent('code'),
+  ProtocolLink: (...chunks) => {
+    return <Link to="/protocol">{chunks}</Link>
+  },
+}
 
 const UrlBox = styled.div`
   display: inline-block;
@@ -64,19 +81,19 @@ export const UrlPreview = () => {
         color="#c64b5d"
         explanation={() => (
           <div>
-            <Heading>Protocol</Heading>
+            <Heading>
+              <FormattedMessage id="url.http.protocol.name" />
+            </Heading>
             <p>
-              Protocol describes what data can be sent between a browser and a
-              server.
+              <FormattedMessage
+                id="url.http.protocol.definition"
+                values={formattedMessageValues}
+              />
             </p>
-            <p>
-              The most common protocols on the web are <strong>HTTPS</strong>{' '}
-              and <strong>HTTP</strong>, which are designed for handling
-              hypertext documents (HTML). However, there are many other
-              protocols, like FTP (File Transfer Protocol) for transferring
-              files, or POP (Post Office Protocol) for sending and receiving
-              emails.
-            </p>
+            <FormattedMessage
+              id="url.http.protocol.description"
+              values={formattedMessageValues}
+            />
           </div>
         )}
       >
@@ -88,18 +105,19 @@ export const UrlPreview = () => {
         color="#307ab8"
         explanation={() => (
           <div>
-            <Heading>Domain name</Heading>
-            <p>Domain is a human-readable address of the server.</p>
+            <Heading>
+              <FormattedMessage id="url.http.domain.name" />
+            </Heading>
             <p>
-              In reality, all servers have IP addresses (i.e.{' '}
-              <code>111.22.33.44</code>), but since those are hard to remember
-              and subjected to change, we often use domain names like aliases
-              instead.
+              <FormattedMessage
+                id="url.http.domain.definition"
+                values={formattedMessageValues}
+              />
             </p>
-            <p>
-              When requested, a domain name is sent to the DNS (Domain Name
-              Servers) that resolves it to the actual IP address of the server.
-            </p>
+            <FormattedMessage
+              id="url.http.domain.description"
+              values={formattedMessageValues}
+            />
           </div>
         )}
       >
@@ -110,26 +128,16 @@ export const UrlPreview = () => {
         color="#7f4ae4"
         explanation={() => (
           <div>
-            <Heading>Port</Heading>
+            <Heading>
+              <FormattedMessage id="url.http.port.name" />
+            </Heading>
             <p>
-              Port number is used by a server to expose a certain service. Since
-              one server may be dealing with multiple things, like hosting a
-              webpage or handling file transfer, each of those services will be
-              available publically on different ports.
+              <FormattedMessage id="url.http.port.definition" />
             </p>
-            <p>
-              Although you can rarely see a port number on the web, it's always
-              required, and by default is inferred from the{' '}
-              <Link to="protocol">protocol</Link>:
-              <ul>
-                <li>
-                  <code>:80</code> is used by HTTP
-                </li>
-                <li>
-                  <code>:443</code> is used by HTTPS
-                </li>
-              </ul>
-            </p>
+            <FormattedMessage
+              id="url.http.port.description"
+              values={formattedMessageValues}
+            />
           </div>
         )}
       >
@@ -142,13 +150,19 @@ export const UrlPreview = () => {
         color="#3caea3"
         explanation={() => (
           <div>
-            <Heading>Path</Heading>
-            <p>Path is a string that points to a resource on a server.</p>
+            <Heading>
+              <FormattedMessage id="url.http.path.name" />
+            </Heading>
             <p>
-              Server decides how to handle a request on a given path. For
-              example, it may return an HTML page, or communicate with another
-              server and respond with a raw data.
+              <FormattedMessage
+                id="url.http.path.definition"
+                values={formattedMessageValues}
+              />
             </p>
+            <FormattedMessage
+              id="url.http.path.description"
+              values={formattedMessageValues}
+            />
           </div>
         )}
       >
@@ -160,20 +174,19 @@ export const UrlPreview = () => {
         align="right"
         explanation={() => (
           <div>
-            <Heading>Query parameter</Heading>
-            <p>Query parameters are arguments to the path.</p>
+            <Heading>
+              <FormattedMessage id="url.http.query.name" />
+            </Heading>
             <p>
-              They are stored in a <code>key=value</code> pairs that are
-              appended to the path with a <code>?</code> (question mark). Each
-              next parameter is joined with an <code>&</code> (ampersand):
-              <ul>
-                <li>
-                  <code>?userId=123&type=reader</code>
-                </li>
-              </ul>
-              Server can access and parse a query string to get additional
-              information about the request.
+              <FormattedMessage
+                id="url.http.query.definition"
+                values={formattedMessageValues}
+              />
             </p>
+            <FormattedMessage
+              id="url.http.query.description"
+              values={formattedMessageValues}
+            />
           </div>
         )}
       >
@@ -186,16 +199,19 @@ export const UrlPreview = () => {
         color="#ed553b"
         explanation={() => (
           <div>
-            <Heading>Fragment</Heading>
+            <Heading>
+              <FormattedMessage id="url.http.fragment.name" />
+            </Heading>
             <p>
-              Fragment is a reference to a section of the page. Sometimes it's
-              called an <em>anchor</em>, or <em>hash</em>.
+              <FormattedMessage
+                id="url.http.fragment.definition"
+                values={formattedMessageValues}
+              />
             </p>
-            <p>
-              In modern development a fragment can also be used to represent a
-              page's state. One of such examples is a client-side routing, which
-              you can observe on this website.
-            </p>
+            <FormattedMessage
+              id="url.http.fragment.description"
+              values={formattedMessageValues}
+            />
           </div>
         )}
       >

@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useMemo, useState } from 'react'
+import { FormattedMessage, IntlProvider } from 'react-intl'
 import { useLocation } from 'react-router'
 import styled from 'styled-components'
 import { Grid } from './components/Grid'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
 import { UrlPreview } from './components/UrlPreview'
+import { LocaleContext } from './LocaleProvider'
 
 const PlaceholderText = styled.p`
   position: absolute;
@@ -28,26 +30,46 @@ const MainContainer = styled.div`
 `
 
 function App() {
+  const defaultLocale =
+    localStorage.getItem('locale') ||
+    (navigator.languages && navigator.languages[0]) ||
+    navigator.language ||
+    navigator.userLanguage ||
+    'en-US'
+
+  const [locale, setLocale] = useState(defaultLocale)
+  const messages = useMemo(() => {
+    try {
+      return require(`./locales/${locale}.json`)
+    } catch (error) {
+      // Fallback to English and clean a potentially corrupted storage
+      localStorage.removeItem('locale')
+      return require('./locales/en-US.json')
+    }
+  }, [locale])
+
   const location = useLocation()
   const isRoot = location.pathname === '/'
 
   return (
-    <>
-      <Header />
-      <main>
-        <Grid className="relative">
-          <MainContainer>
-            {isRoot && (
-              <PlaceholderText>
-                Click on a part of the URL to learn more
-              </PlaceholderText>
-            )}
-            <UrlPreview />
-          </MainContainer>
-        </Grid>
-      </main>
-      <Footer />
-    </>
+    <IntlProvider locale={locale} messages={messages}>
+      <LocaleContext.Provider value={{ locale, setLocale }}>
+        <Header />
+        <main>
+          <Grid className="relative">
+            <MainContainer>
+              {isRoot && (
+                <PlaceholderText>
+                  <FormattedMessage id="homepage.urlPreview.placeholder" />
+                </PlaceholderText>
+              )}
+              <UrlPreview />
+            </MainContainer>
+          </Grid>
+        </main>
+        <Footer />
+      </LocaleContext.Provider>
+    </IntlProvider>
   )
 }
 

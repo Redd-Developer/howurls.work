@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "Click on a part of the URL to learn more",
+  "footer.copyright": "Made with love by {author}",
+  "url.http.protocol.name": "Protocol",
+  "url.http.protocol.definition": "Protocol describes a content and nature of comnunication between a browser and a server.",
+  "url.http.protocol.description": "<p>The most common protocols on the web are <strong>HTTPS</strong> and <strong>HTTP</strong>, which are designed for handling hypertext documents (HTML). However, there are many other protocols, like FTP (File Transfer Protocol) for transferring files, or POP (Post Office Protocol) for sending and receiving emails.</p>",
+  "url.http.domain.name": "Domain name",
+  "url.http.domain.definition": "Domain is a human-readable address of the server.",
+  "url.http.domain.description": "<p>In reality, all servers have IP addresses (i.e. <code>111.22.33.44</code>), but since those are hard to remember and subjected to change, we often use domain names like aliases instead.</p><p>When requested, a domain name is sent to the DNS (Domain Name Servers) that resolves it to the actual IP address of the server.</p>",
+  "url.http.port.name": "Port",
+  "url.http.port.definition": "Port number is used by a server to expose a certain service.",
+  "url.http.port.description": "<p>Since one server may be dealing with multiple things, like hosting a webpage or handling file transfer, each of those services will be available publically on different ports.</p><p>Although you can rarely see a port number on the web, it's always required, and by default is inferred from the <ProtocolLink>protocol</ProtocolLink>:</p><ul><li><code>:80</code> is used by HTTP</li><li><code>:443</code> is used by HTTPS</li></ul>",
+  "url.http.path.name": "Path",
+  "url.http.path.definition": "Path is a string that points to a resource on a server.",
+  "url.http.path.description": "<p>Server, or client, decides how to handle a request on a given path. For example, it may return an HTML page, or communicate with another server and respond with a raw data.</p>",
+  "url.http.query.name": "Query parameter",
+  "url.http.query.definition": "Query parameters are arguments to the path.",
+  "url.http.query.description": "<p>They are stored in a <code>key=value</code> pairs that are appended to the path with a <code>?</code> (question mark). Each next parameter is joined with an <code>&</code> (ampersand):</p><ul><li><code>?userId=123&type=reader</code></li></ul><p>Server can access and parse a query string to get additional information about the request.</p>",
+  "url.http.fragment.name": "Fragment",
+  "url.http.fragment.definition": "Fragment is a reference to a section of the page. Sometimes it's called an <em>anchor</em>, or <em>hash</em>.",
+  "url.http.fragment.description": "<p>In modern development a fragment can also be used to represent a page's state. One of such examples is a client-side routing, which you can observe on this website.</p>"
+}
