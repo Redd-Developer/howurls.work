@@ -19,7 +19,9 @@ const StyledFooter = styled.footer`
 const GitHubLink = styled.a`
   margin-right: -10px;
   padding: 10px;
-  display: flex;
+  display: inline-block;
+  height: 24px;
+  box-sizing: content-box;
 `
 
 export const Footer = () => {
@@ -28,7 +30,7 @@ export const Footer = () => {
       <Box
         as={StyledFooter}
         flex
-        alignItems="flex-start"
+        alignItems="center"
         justifyContent="space-between"
         paddingTop="2rem"
         paddingBottom="1rem"
