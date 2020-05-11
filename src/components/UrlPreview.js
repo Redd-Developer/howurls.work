@@ -78,7 +78,6 @@ const UrlBox = styled.div`
 
     &.active {
       color: var(--color-primary);
-      font-weight: 600;
     }
   }
 `
