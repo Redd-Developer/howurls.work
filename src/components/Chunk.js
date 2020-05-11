@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useCallback } from 'react'
 import { useLocation, useHistory } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 
@@ -84,18 +84,23 @@ export const Chunk = ({
   url,
 }) => {
   const location = useLocation()
+  const history = useHistory()
+
   const isActive = useMemo(() => {
     return location.pathname.includes(url)
   }, [location.pathname, url])
 
-  const history = useHistory();
-  const redirect = function(){
+  const handleChunkClick = useCallback(() => {
     history.replace(url)
-  }
+  }, [url, history])
+
+  const linkClassNames = [isActive && 'active'].filter(Boolean).join(' ')
 
   return (
     <Container color={color}>
-      <div className = {`NavLink ${isActive ? 'active' : ''}`} onClick={redirect}>{children}</div>
+      <button className={linkClassNames} onClick={handleChunkClick}>
+        {children}
+      </button>
       {isActive && explanation && (
         <Popover orientation={orientation} align={align}>
           {explanation()}

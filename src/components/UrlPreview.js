@@ -45,10 +45,20 @@ const UrlBox = styled.div`
     0 22.3px 17.9px rgba(0, 0, 0, 0.012), 0 41.8px 33.4px rgba(0, 0, 0, 0.014),
     0 100px 80px rgba(0, 0, 0, 0.02);
 
-  a {
+  a,
+  button {
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+
     display: inline-block;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: inherit;
+    font-family: inherit;
     text-decoration: none;
-    color: inherit;
 
     :focus {
       outline: 0;
