@@ -24,6 +24,7 @@ export const LanguageSwitch = () => {
         <option value="uk-UA">Українська</option>
         <option value="ru-RU">Русский</option>
       	<option value="pt-BR">Portuguese (Brazil)</option>
+	<option value="ir-IR">Persian (فارسی)</option>
 	  </select>
     </span>
   )
