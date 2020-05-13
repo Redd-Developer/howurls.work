@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "单击链接中的任意部分了解详细解释",
+  "footer.copyright": "制作者 {author}",
+  "url.http.protocol.name": "协议",
+  "url.http.protocol.definition": "协议描述了浏览器和服务器之间通信的内容和性质。",
+  "url.http.protocol.description": "<p>网络上最常见的协议是<strong> HTTPS </strong>和<strong> HTTP </strong>，它们专用于处理超文本文档（HTML）。但是，还有许多其他协议，例如用于传输文件的FTP（文件传输协议）或用于发送和接收电子邮件的POP（邮局协议）。</p>",
+  "url.http.domain.name": "域名",
+  "url.http.domain.definition": "域名是服务器的可读地址。",
+  "url.http.domain.description": "<p>实际上，所有服务器都具有IP地址（即<code>111.22.33.44</code>），但是由于这些地址难以记住并且容易发生变化，因此我们通常使用别名之类的域名。</p><p>在请求时，会将域名发送到DNS（域名服务器），该域名会将其解析为服务器的实际IP地址。</p>",
+  "url.http.port.name": "端口",
+  "url.http.port.definition": "服务器使用端口号公开某些服务。",
+  "url.http.port.description": "<p>由于一台服务器可能正在处理多种事情，例如网页托管或处理文件传输，因此这些服务中的每一项都可以在不同的端口上公开使用。</p><p>尽管您在网络上很少看到端口号，但它始终是必需的，并且默认情况下是从 <ProtocolLink> protocol </ProtocolLink> 推断的：</p><ul><li><code>:80</code>由HTTP使用</li><li><code>:443</code>由HTTPS使用</li></ul>",
+  "url.http.path.name": "路径",
+  "url.http.path.definition": "路径是一个指向服务器上资源的字符串。",
+  "url.http.path.description": "<p>服务器或客户端决定如何处理给定路径上的请求。例如：它可以返回HTML页面，或与其他服务器通信并以原始数据进行响应。</p>",
+  "url.http.query.name": "查询参数",
+  "url.http.query.definition": "查询参数是路径的参数。",
+  "url.http.query.description": "<p>它们以键值对存储<code>key=value</code>，并以<code>?</code>（问号）附加到路径中。 每个参数都与下一个参数使用<code>＆</code>（和）连接：</p><ul><li><code>?userId=123＆type=reader</code></li></ul><p>服务器可以访问并解析查询字符串以获取有关请求的其他信息。</p>",
+  "url.http.fragment.name": "片段标识符",
+  "url.http.fragment.definition": "片段是对页面某部分的引用，有时称为<em> anchor </em>（锚点）或<em> hash </em>（哈希属性）。",
+  "url.http.fragment.description": "<p>在开发中，片段标识符也可以用来表示页面的状态。例如：客户端路由，您可以查看此网站的页面链接。</p>"
+}
