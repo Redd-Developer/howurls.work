@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "Klikkaa osoitteen osaa nähdäksesi lisätietoja",
+  "footer.copyright": "Tehty rakkaudella, {author}",
+  "url.http.protocol.name": "Protokolla",
+  "url.http.protocol.definition": "Protokolla määrittää, miten selain ja palvelin keskustelevat keskenään.",
+  "url.http.protocol.description": "<p>Yleisimmät verkossa käytetyt protokollat ovat <strong>HTTPS</strong> ja <strong>HTTP</strong>, jotka ovat suunniteltu käsittelemään mm. HTML-tiedostoja. On kuitenkin olemassa monia muita protokollia, kuten FTP (File Transfer Protocol) tiedostojen siirtoon tai POP (Post Office Protocol) sähköpostien lähettämiseen ja vastaanottamiseen.</p>",
+  "url.http.domain.name": "Verkkotunnus",
+  "url.http.domain.definition": "Verkkotunnus on palvelimen osoite selkokielisenä.",
+  "url.http.domain.description": "<p>Todellisuudessa kaikilla palvelimilla on IP-osoite (esim. <code>111.22.33.44</code>), mutta ne ovat hankalia muistaa ja saattavat muuttua ajan myötä. Siksi verkkotunnuksia käytetään usein.</p><p>Verkkotunnusta kutsuessa, se lähetetään nimipalvelimille (DNS, Domain Name Server), jotka ohjaavat kutsun palvelimen IP-osoitteeseen.</p>",
+  "url.http.port.name": "Portti",
+  "url.http.port.definition": "Porttinumeroa käytetään tietyn palvelun julkaisemiseen palvelimelta.",
+  "url.http.port.description": "<p>Palvelin saattaa käsitellä useita asioita, kuten verkkosivuja tai tiedostonsiirtoa. Jokainen näistä palveluista julkaistaan käyttäen eri portteja.</p><p>Vaikka verkossa näkee harvoin käytettävän porttinumeroita, se on aina pakollinen. Oletusarvoisesti se päätellään <ProtocolLink>protokollasta</ProtocolLink>:</p><ul><li><code>:80</code> HTTP</li><li><code>:443</code> HTTPS</li></ul>",
+  "url.http.path.name": "Polku",
+  "url.http.path.definition": "Polku on merkkijono, joka osoittaa palvelimella sijaitsevaan resurssiin.",
+  "url.http.path.description": "<p>Palvelin tai asiakasohjelma päättää miten annettu polku käsitellään. Se voi esimerkiksi palauttaa HTML-sivun tai olla yhteydessä toiseen palvelimeen ja vastata raakadatalla.</p>",
+  "url.http.query.name": "Kyselyparametri",
+  "url.http.query.definition": "Kyselyparametrit ovat polun argumentteja.",
+  "url.http.query.description": "<p>Ne määritellään <code>avain=arvo</code> -pareittain ja lisätään polun perään käyttämällä <code>?</code> (kysymysmerkki). Parametrit erotellaan käyttäen <code>&</code> (et-merkki):</p><ul><li><code>?userId=123&type=reader</code></li></ul><p>Kyselyparametreilla voidaan välittää lisätietoja palvelimelle.</p>",
+  "url.http.fragment.name": "Fragmenttitunniste",
+  "url.http.fragment.definition": "Fragmenttitunnisteella viitataan sivulla olevaan osioon. Toisinaan siitä käytetään nimitystä <em>ankkuri</em> tai lainasanaa <em>hash</em>.",
+  "url.http.fragment.description": "<p>Modernissa web-kehityksessä fragmenttitunnistetta voidaan käyttää myös edustamaan sivun tilaa. Yksi esimerkki on asiakaspuolen reititys, jota voit tarkkailla tällä verkkosivustolla.</p>"
+}
