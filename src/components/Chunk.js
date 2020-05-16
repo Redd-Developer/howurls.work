@@ -87,7 +87,7 @@ export const Chunk = ({
   const history = useHistory()
 
   const isActive = useMemo(() => {
-    return location.pathname.includes(url)
+    return location.pathname.substr(1) === url
   }, [location.pathname, url])
 
   const handleChunkClick = useCallback(() => {
