@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Box } from 'atomic-layout'
 import { FormattedMessage } from 'react-intl'
 import { ReactComponent as GitHubLogo } from '../images/github-logo.svg'
+import { ReactComponent as VercelLogo } from '../images/vercel-logo.svg'
 import { Grid } from './Grid'
 import { LanguageSwitch } from './LanguageSwitch'
 
@@ -35,7 +36,7 @@ export const Footer = () => {
         paddingTop="2rem"
         paddingBottom="1rem"
       >
-        <span>
+        <div>
           <FormattedMessage
             id="footer.copyright"
             values={{
@@ -51,7 +52,19 @@ export const Footer = () => {
               ),
             }}
           />
-        </span>
+
+          <Box as="p" flex alignItems="center">
+            <span>Powered by</span>
+            <Box
+              as="a"
+              href="https://vercel.com/?utm_source=artemz"
+              marginBottom={-2}
+              marginLeft="0.5ch"
+            >
+              <VercelLogo width={64} fill="currentColor" />
+            </Box>
+          </Box>
+        </div>
         <Box flex alignItems="center">
           <Box marginRight={10}>
             <LanguageSwitch />
