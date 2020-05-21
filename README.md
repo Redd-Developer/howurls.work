@@ -16,3 +16,9 @@ Hey! My name is [Artem](https://github.com/kettanaito) and I'm a software engine
 
 - [**Support me on GitHub**](https://github.com/sponsors/kettanaito)
 - [Follow me on Twitter](https://twitter.com/kettanaito)
+
+## Sponsors
+
+<a href="https://vercel.com/?utm_source=artemz">
+  <img src="./src/images/vercel-logo.png" alt="Vercel" height="40" />
+</a>
