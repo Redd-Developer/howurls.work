@@ -2,7 +2,7 @@
   "homepage.urlPreview.placeholder": "Click on a part of the URL to learn more",
   "footer.copyright": "Made with love by {author}",
   "url.http.protocol.name": "Protocol",
-  "url.http.protocol.definition": "Protocol describes a content and nature of comnunication between a browser and a server.",
+  "url.http.protocol.definition": "Protocol describes a content and nature of communication between a browser and a server.",
   "url.http.protocol.description": "<p>The most common protocols on the web are <strong>HTTPS</strong> and <strong>HTTP</strong>, which are designed for handling hypertext documents (HTML). However, there are many other protocols, like FTP (File Transfer Protocol) for transferring files, or POP (Post Office Protocol) for sending and receiving emails.</p>",
   "url.http.domain.name": "Domain name",
   "url.http.domain.definition": "Domain is a human-readable address of the server.",
