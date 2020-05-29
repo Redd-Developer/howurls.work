@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "URL의 각 부분을 클릭해 학습해보세요.",
+  "footer.copyright": "Made with love by {author}",
+  "url.http.protocol.name": "프로토콜",
+  "url.http.protocol.definition": "프로토콜은 브라우저와 서버 간의 통신 환경과 그 내용을 말합니다.",
+  "url.http.protocol.description": "<p>가장 보편적인 프로토콜은 하이퍼텍스트 문서 (HTML)을 다루기 위해 만들어진 <strong>HTTPS</strong>와 <strong>HTTP</strong>을 말합니다. 그러나, 파일 전송을 위한 FTP (File Transfer Protocol), 이메일을 주고 받기 위한 POP (Post Office Protocol)같은 프로토콜도 있습니다.</p>",
+  "url.http.domain.name": "도메인 네임",
+  "url.http.domain.definition": "도메인은 사람이 읽을 수 있는 서버의 주소를 말합니다.",
+  "url.http.domain.description": "<p>실제로 모든 서버들은 IP 주소(예. <code>111.22.33.44</code>)를 가지고 있습니다. 하지만 IP 주소는 기억하기 어렵고 변경될 수 있기 때문에 우리는 통칭 도메인 네임이라는 것을 사용합니다.</p><p>사용자로부터 요청을 받으면 도메인 네임은 서버의 실제 IP 주소로 바꿔주는 기능을 하는 DNS (Domain Name Servers)로 보내집니다.</p>",
+  "url.http.port.name": "포트",
+  "url.http.port.definition": "포트 번호는 특정 서비스를 노출시키기 위해 서버에 의해 사용됩니다.",
+  "url.http.port.description": "<p>하나의 서버가 웹페이지 호스팅이나 파일 전송 등 여러가지를 다루게 되는데, 각 서비스들은 서로 다른 포트를 사용합니다.</p><p>비록 웹에서 포트 번호는 거의 볼 수 없지만 포트 번호는 항상 필요합니다. 포트 번호는 <ProtocolLink>프로토콜</ProtocolLink>에 의해 기본값을 예상할 수 있습니다.</p><ul><li><code>:80</code>은 HTTP에서 사용합니다.</li><li><code>:443</code>은 HTTPS에서 사용합니다.</li></ul>",
+  "url.http.path.name": "경로",
+  "url.http.path.definition": "경로는 서버의 리소스를 가리키는 문자열입니다.",
+  "url.http.path.description": "<p>서버나 클라이언트는 주어진 경로에서 어떻게 요청을 다룰지 결정합니다. 예를들면, HTML 페이지를 보여주거나 다른 서버와 통신하여 원시 자료(raw data)로 응답할 수 있습니다.</p>",
+  "url.http.query.name": "쿼리 파라미터",
+  "url.http.query.definition": "쿼리 파라미터는 경로에 대한 인자(arguments)입니다.",
+  "url.http.query.description": "<p>쿼리 파라미터는 <code>key=value</code> 의 형태로 경로에 <code>?</code> (물음표)와 함께 저장됩니다. 그 다음에 오는 파라미터는 <code>&</code> (앰퍼샌드 또는 앤드)로 묶이게 됩니다:</p><ul><li><code>?userId=123&type=reader</code></li></ul><p>서버는 요청에 대한 추가 정보를 얻기 위해 쿼리 문자열에 접근하고 파싱할 수 있습니다 .</p>",
+  "url.http.fragment.name": "프래그먼트",
+  "url.http.fragment.definition": "프래그먼트는 페이지의 섹션에 대한 참조(reference)를 말합니다. <em>앵커</em> 또는 <em>해시</em>라고도 합니다.",
+  "url.http.fragment.description": "<p>최근에는 페이지의 스테이트(state)를 나타내기 위해 프래그먼트를 사용할 수도 있습니다. 이러한 예시 중 하나는 이 사이트에서 확인할 수 있는 클라이언트 사이드(client-side) 라우팅입니다 .</p>"
+}
