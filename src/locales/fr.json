@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "Cliquez sur une partie de l'URL pour en savoir plus",
+  "footer.copyright": "Fait avec amour par {author}",
+  "url.http.protocol.name": "Protocole",
+  "url.http.protocol.definition": "Le protocole décrit un contenu et la nature de la communication entre un navigateur et un serveur",
+  "url.http.protocol.description": "<p>Les protocoles les plus courants sur le web sont <strong>HTTPS</strong> et <strong>HTTP</strong>, qui sont conçus pour gérer les document hypertexte (HTML). Toutefois, il y a bien d'autres protocoles, tels FTP (File Transfer Protocol) pour transférer des fichiers, ou POP (Post Office Protocol) pour envoyer et recevoir des emails.</p>",
+  "url.http.domain.name": "Nom de domaine",
+  "url.http.domain.definition": "Le domaine est une adresse du serveur lisible par un humain.",
+  "url.http.domain.description": "<p>En réalité, tous les serveurs ont une adresse IP (par exemple <code>111.22.33.44</code>), mais comme ces adresses sont difficiles à mémoriser et sujettes à des changements, on utilise souvent des noms de domaines comme alias.</p><p>Lorsque demandé, un nom de domaine est envoyé au DNS (Domain Name System) qui le transforme en la véritable adresse IP du serveur.</p>",
+  "url.http.port.name": "Port",
+  "url.http.port.definition": "Le numéro de port est utilisé par le serveur pour exposer un service en particulier.",
+  "url.http.port.description": "<p>Étant donné qu'un serveur peut gérer différents services, tels qu'héberger une page web ou un partage de fichiers, chacun de ces services sera disponible publiquement sur un port différent.</p><p>Bien qu'on voie rarement un numéro de port sur Internet, il est toujours requis, et par défaut il est inféré d'après le <ProtocolLink>protocole</ProtocolLink> : </p><ul><li><code>:80</code> est utilisé par HTTP</li><li><code>:443</code> est utilisé par HTTPS</li></ul>",
+  "url.http.path.name": "Chemin",
+  "url.http.path.definition": "Le chemin est une chaîne de caractères désignant une ressource sur un serveur.",
+  "url.http.path.description": "<p>Le serveur, ou le client, décide de comment gérer une requête sur un chemin donné. Par exemple, il peut retourner une page HTML, ou communiquer avec un autre serveur et répondre avec des données brutes.</p>",
+  "url.http.query.name": "Paramètre de requête",
+  "url.http.query.definition": "Les paramètres de requête sont des arguments du chemin.",
+  "url.http.query.description": "<p>Ils sont stockés dans des paires <code>clef=valeur</code> qui sont ajoutées au chemin après un <code>?</code> (point d'interrogation). Chaque paramètre suivant est séparé par un <code>&</code> (esperluette) : </p><ul><li><code>?utilisateur=123&type=lecteur</code></li></ul><p>Le serveur peut analyser une URL afin d'obtenir des informations supplémentaires sur la requête.</p>",
+  "url.http.fragment.name": "Fragment",
+  "url.http.fragment.definition": "Le fragment est une référence vers une section de la page. On parle parfois d'<em>ancre</em>, ou de <em>hash</em>",
+  "url.http.fragment.description": "<p>En programmation moderne, un fragment peut aussi être utilisé pour représenter l'état d'une page. Un exemple est le routage côté client, que vous pouvez observer sur ce site.</p>"
+}
