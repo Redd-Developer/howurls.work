@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "Klicken Sie auf einen Teil der URL, um mehr zu erfahren",
+  "footer.copyright": "Mit Liebe gemacht von {author}",
+  "url.http.protocol.name": "Netzwerkprotokoll",
+  "url.http.protocol.definition": "Das Netzwerkprotokoll beschreibt den Inhalt und die Art der Kommunikation zwischen einem Browser und einem Server.",
+  "url.http.protocol.description": "<p>Die gängigsten Netzwerkprotokolle im Web sind <strong>HTTPS</strong> und <strong>HTTP</strong>, die für den Umgang mit Hypertext-Dokumenten (HTML) ausgelegt sind. Es gibt jedoch noch viele andere Netzwerkprotokolle, z. B. FTP (File Transfer Protocol) zum Übertragen von Dateien oder POP (Post Office Protocol) zum Senden und Empfangen von E-Mails.</p>",
+  "url.http.domain.name": "Domain",
+  "url.http.domain.definition": "Die Domain ist eine für Menschen lesbare Adresse des Servers.",
+  "url.http.domain.description": "<p>In Wirklichkeit haben alle Server IP-Adressen (zum Beispiel <code>111.22.33.44</code>). Diese lassen sich aber nur schwer merken und unterliegen Änderungen, daher verwendet man stattdessen die Domains als Alias.</p><p>Bei einer Abfrage wird die Domain an den DNS (Domain Name Server) gesendet, der sie in die tatsächliche IP-Adresse des Servers auflöst.</p>",
+  "url.http.port.name": "Port",
+  "url.http.port.definition": "Die Portnummer wird von einem Server verwendet, um einen bestimmten Dienst verfügbar zu machen.",
+  "url.http.port.description": "<p>Da ein Server möglicherweise mehrere Aufgaben erledigt, zum Beispiel das Hosten einer Webseite oder das Abwickeln der Dateiübertragungen, ist jeder dieser Dienste an verschiedenen Ports geknüpft.</p><p>Obwohl Sie selten eine Portnummer in der URL sehen werden, ist sie immer erforderlich und wird standardmäßig aus dem <ProtocolLink>Protokoll</ProtocolLink> abgeleitet:</p><ul><li><code>: 80</code> wird von HTTP verwendet</li><li><code>: 443</code> wird von HTTPS verwendet</li></ul>",
+  "url.http.path.name": "Pfadname",
+  "url.http.path.definition": "Ein Pfadname (auch Pfad) ist eine Zeichenfolge, die auf eine Datei, ein Verzeichnis, oder je nach Plattform auch auf andere Ressourcen auf einem Server verweist.",
+  "url.http.path.description": "<p>Server oder Client entscheidet, wie eine Anforderung auf einem bestimmten Pfad verarbeitet wird. Beispielsweise kann er eine HTML-Seite zurückgeben oder mit einem anderen Server kommunizieren und mit Rohdaten antworten.</p>",
+  "url.http.query.name": "Query-Komponente",
+  "url.http.query.definition": "Die Query-Komponente, häufig auch Query-String, sind Argumente für den Pfad.",
+  "url.http.query.description": "<p>Die Query-Komponente enthält Daten, häufig in Form von benannten Parametern. Sie werden in einem <code>Schlüssel=Wert</code> -Paar gespeichert, das mit einem <code>?</code> (Fragezeichen) an den Pfad angehängt wird. Jeder nächste Parameter wird mit einem <code>&</code> (kaufmännisches Und) verknüpft: </p><ul><li><code>?userId=123&type=reader</code></li></ul><p>Der Server kann auf diesen Query-String zugreifen und auswerten.</p>",
+  "url.http.fragment.name": "Fragment",
+  "url.http.fragment.definition": "Das Fragment ist ein Verweis auf einen Abschnitt der Seite. Manchmal wird es als <em>Anker</em> oder <em>Hash</em> bezeichnet.",
+  "url.http.fragment.description": "<p>In der modernen Webentwicklung kann ein Fragment auch verwendet werden, um den Status einer Seite darzustellen. Eines dieser Beispiele ist das clientseitige Routing, das Sie auf dieser Website beobachten können.</p>"
+}
