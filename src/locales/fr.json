@@ -15,7 +15,7 @@
   "url.http.path.description": "<p>Le serveur, ou le client, décide de comment gérer une requête sur un chemin donné. Par exemple, il peut retourner une page HTML, ou communiquer avec un autre serveur et répondre avec des données brutes.</p>",
   "url.http.query.name": "Paramètre de requête",
   "url.http.query.definition": "Les paramètres de requête sont des arguments du chemin.",
-  "url.http.query.description": "<p>Ils sont stockés dans des paires <code>clef=valeur</code> qui sont ajoutées au chemin après un <code>?</code> (point d'interrogation). Chaque paramètre suivant est séparé par un <code>&</code> (esperluette) : </p><ul><li><code>?utilisateur=123&type=lecteur</code></li></ul><p>Le serveur peut analyser une URL afin d'obtenir des informations supplémentaires sur la requête.</p>",
+  "url.http.query.description": "<p>Ils sont stockés dans des paires <code>clef=valeur</code> qui sont ajoutées au chemin après un <code>?</code> (point d'interrogation). Chaque paramètre suivant est séparé par un <code>&</code> (esperluette) : </p><ul><li><code>?userId=123&type=reader</code></li></ul><p>Le serveur peut analyser une URL afin d'obtenir des informations supplémentaires sur la requête.</p>",
   "url.http.fragment.name": "Fragment",
   "url.http.fragment.definition": "Le fragment est une référence vers une section de la page. On parle parfois d'<em>ancre</em>, ou de <em>hash</em>",
   "url.http.fragment.description": "<p>En programmation moderne, un fragment peut aussi être utilisé pour représenter l'état d'une page. Un exemple est le routage côté client, que vous pouvez observer sur ce site.</p>"
