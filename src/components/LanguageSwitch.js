@@ -27,6 +27,7 @@ export const LanguageSwitch = () => {
         <option value="pt-BR">Portuguese (Brazil)</option>
         <option value="zh-CN">Chinese (中文-简体)</option>
         <option value="fi-FI">Finnish</option>
+        <option value="fr">Français</option>
         <option value="ko-KR">한국어</option>
       </select>
     </span>
