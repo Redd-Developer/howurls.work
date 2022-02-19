@@ -19,6 +19,9 @@ const formattedMessageValues = {
   ProtocolLink: (...chunks) => {
     return <Link to="/protocol">{chunks}</Link>
   },
+  DomainLink: (...chunks) => {
+    return <Link to="/domain">{chunks}</Link>
+  }
 }
 
 const UrlBox = styled.div`
@@ -109,6 +112,29 @@ export const UrlPreview = () => {
         https://
       </Chunk>
       <Chunk
+        url="subdomain"
+        color="#e4974a"
+        explanation={() => (
+          <div>
+            <Heading>
+              <FormattedMessage id="url.http.subdomain.name" />
+            </Heading>
+            <p>
+              <FormattedMessage
+                id="url.http.subdomain.definition"
+                values={formattedMessageValues}
+              />
+            </p>
+            <FormattedMessage
+              id="url.http.subdomain.description"
+              values={formattedMessageValues}
+            />
+          </div>
+        )}
+      >
+        www.
+      </Chunk>
+      <Chunk
         url="domain"
         orientation="top"
         color="#307ab8"
@@ -120,7 +146,6 @@ export const UrlPreview = () => {
             <p>
               <FormattedMessage
                 id="url.http.domain.definition"
-                values={formattedMessageValues}
               />
             </p>
             <FormattedMessage
