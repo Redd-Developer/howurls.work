@@ -29,6 +29,7 @@ export const LanguageSwitch = () => {
         <option value="fi-FI">Finnish</option>
         <option value="fr">Français</option>
         <option value="ko-KR">한국어</option>
+        <option value="de-DE">German</option>
       </select>
     </span>
   )
