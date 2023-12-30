@@ -32,7 +32,7 @@ const Popover = styled.div`
     --offset: 5rem;
 
     top: initial;
-    width: 370px;
+    width: 450px;
 
     ${({ orientation }) => {
       switch (orientation) {
