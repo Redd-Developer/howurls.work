@@ -1,0 +1,22 @@
+{
+  "homepage.urlPreview.placeholder": "Haz clic en una parte de la URL para obtener más información",
+  "footer.copyright": "Hecho con amor por {author}",
+  "url.http.protocol.name": "Protocolo",
+  "url.http.protocol.definition": "El protocolo describe el contenido y la naturaleza de la comunicación entre un navegador y un servidor.",
+  "url.http.protocol.description": "<p>Los protocolos más comunes en la web son <strong>HTTPS</strong> y <strong>HTTP</strong>, que están diseñados para manejar documentos de hipertexto (HTML). Sin embargo, existen muchos otros protocolos, como FTP (Protocolo de Transferencia de Archivos) para transferir archivos, o POP (Protocolo de Oficina de Correos) para enviar y recibir correos electrónicos.</p>",
+  "url.http.domain.name": "Nombre de dominio",
+  "url.http.domain.definition": "El dominio es una dirección legible por humanos del servidor.",
+  "url.http.domain.description": "<p>En realidad, todos los servidores tienen direcciones IP (es decir, <code>111.22.33.44</code>), pero como esas son difíciles de recordar y están sujetas a cambios, a menudo usamos nombres de dominio como alias en su lugar.</p><p>Cuando se solicita, un nombre de dominio se envía a los servidores DNS (Servidores de Nombres de Dominio) que lo resuelven a la dirección IP real del servidor.</p>",
+  "url.http.port.name": "Puerto",
+  "url.http.port.definition": "El número de puerto es utilizado por un servidor para exponer un servicio específico.",
+  "url.http.port.description": "<p>Dado que un servidor puede ocuparse de múltiples cosas, como alojar una página web o manejar la transferencia de archivos, cada uno de esos servicios estará disponible públicamente en puertos diferentes.</p><p>Aunque rara vez se vea un número de puerto en la web, siempre es necesario y, por defecto, se infiere del <ProtocolLink>protocolo</ProtocolLink>:</p><ul><li><code>:80</code> es utilizado por HTTP</li><li><code>:443</code> es utilizado por HTTPS</li></ul>",
+  "url.http.path.name": "Ruta",
+  "url.http.path.definition": "La ruta es una cadena de texto que apunta a un recurso en un servidor.",
+  "url.http.path.description": "<p>El servidor, o el cliente, decide cómo manejar una solicitud en una ruta dada. Por ejemplo, puede devolver una página HTML o comunicarse con otro servidor y responder con datos en bruto.</p>",
+  "url.http.query.name": "Parámetro de consulta",
+  "url.http.query.definition": "Los parámetros de consulta son argumentos para la ruta.",
+  "url.http.query.description": "<p>Se almacenan en pares de <code>clave=valor</code> que se agregan a la ruta con un <code>?</code> (signo de interrogación). Cada parámetro siguiente se une con un <code>&</code> (ampersand):</p><ul><li><code>?userId=123&type=lector</code></li></ul><p>El servidor puede acceder y analizar una cadena de consulta para obtener información adicional sobre la solicitud.</p>",
+  "url.http.fragment.name": "Fragmento",
+  "url.http.fragment.definition": "El fragmento es una referencia a una sección de la página. A veces se le llama un <em>ancla</em>, o <em>hash</em>.",
+  "url.http.fragment.description": "<p>En el desarrollo moderno, un fragmento también se puede utilizar para representar el estado de una página. Uno de esos ejemplos es el enrutamiento del lado del cliente, que puedes observar en este sitio web.</p>"
+}
